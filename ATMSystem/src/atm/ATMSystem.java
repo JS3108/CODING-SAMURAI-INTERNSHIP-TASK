@@ -5,7 +5,7 @@ public class ATMSystem {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double balance = 5000.0; // Starting balance 
+        double balance = 5000.0; //hardcoded balance
         int choice;
 
         System.out.println("Welcome to the ATM Banking System");
@@ -21,7 +21,7 @@ public class ATMSystem {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Your current balance is: ₹" + balance); //hardcoded balance
+                    System.out.println("Your current balance is: ₹" + balance); 
                     break;
                     
                 case 2: //deposit
