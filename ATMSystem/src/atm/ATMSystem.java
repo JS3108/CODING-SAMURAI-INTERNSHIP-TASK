@@ -21,32 +21,32 @@ public class ATMSystem {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Your current balance is: ₹" + balance);
+                    System.out.println("Your current balance is: ₹" + balance); //hardcoded balance
                     break;
                     
-                case 2:
+                case 2: //deposit
                     System.out.print("Enter amount to deposit: ₹");
                     double deposit = sc.nextDouble();
-                    if (deposit > 0) {
+                    if (deposit > 0) { //deposit only if amt is greater than 0
                         balance += deposit;
                         System.out.println("Deposit successful. New balance: ₹" + balance);
-                    } else {
+                    } else { //do not accept negative amount
                         System.out.println("Invalid amount!");
                     }
                     break;
                     
-                case 3:
+                case 3: //withdraw
                     System.out.print("Enter amount to withdraw: ₹");
                     double withdraw = sc.nextDouble();
-                    if (withdraw > 0 && withdraw <= balance) {
+                    if (withdraw > 0 && withdraw <= balance) {//withdraw only if balance is sufficient
                         balance -= withdraw;
                         System.out.println("Withdrawal successful. New balance: ₹" + balance);
-                    } else {
+                    } else { //deny if balance insufficient
                         System.out.println("Insufficient funds or invalid amount!");
                     }
                     break;
                     
-                case 4:
+                case 4://exit
                     System.out.println("Thank you for using the ATM. Goodbye!");
                     break;
                     
