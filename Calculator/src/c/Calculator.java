@@ -47,6 +47,7 @@ public class Calculator {
 			if(n2==0)
 			{
 				System.out.println("Cannot divide by 0!"); //exception handling
+				break;
 			}
 			else
 			{
